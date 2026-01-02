@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #2a1b6b, #5c44a2);
+    position: relative;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(1px 1px at 25% 15%, #fff, transparent),
+        radial-gradient(1px 1px at 53% 40%, #fff, transparent),
+        radial-gradient(2px 2px at 30% 10%, #fff, transparent),
+        radial-gradient(1.1px 1.1px at 22% 12%, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 55% 37%, #fff, transparent),
+        radial-gradient(1.3px 1.3px at 40% 15%, #fff, transparent);
+}
+
+.container {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px, 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.caixa-user {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.caixa-user input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.caixa-user input::placeholder {
+    color: rgba(255, 255, 255, 0.16);
+}
+
+.caixa-user i {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    top: 25%;
+}
+
+.checkbox-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 16px;
+
+}
+
+.checkbox-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.checkbox-forgot label input{
+    accent-color: #5738ad;
+}
+.checkbox-forgot a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.checkbox-forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #2a1b6b;
+    font-size: 16px;
+    font-weight: 600;    
+    transition: all 0.3;
+}
+button:hover{
+    background-color: #fff;
+    transform: translateY(-5px); 
+}
+.register-link{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.register-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
